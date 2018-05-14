@@ -1,3 +1,5 @@
+source/images/logo.png
+source/index.html.md
 *.gem
 *.rbc
 .bundle
