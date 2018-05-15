@@ -624,11 +624,56 @@ html, body {
   width: 100%
 }
 
-.toc-wrapper, .content, .dark-box  {
-  top: 32px;
+.toc-wrapper, .page-wrapper  {
+  top: 110px;
 }
 
 ////////////////////////////////////////////////////////////////////////////////
 // CMR HEADER
 ////////////////////////////////////////////////////////////////////////////////
 
+.doc-mast {
+  margin-top: 30px;
+  position: fixed;
+  width: 100%;
+  z-index: 1000;
+}
+
+.eui-masthead-logo.eui-application-logo a:link,
+.eui-masthead-logo.eui-application-logo a:visited {
+  padding: 22px 0 5px 70px;
+  font-weight: 300;
+}
+
+.eui-masthead-logo h1 {
+  font-family: "Helvetica Neue", "Helvetica", sans-serif;
+  font-weight: 300;
+  font-size: 2.2em;
+}
+
+.doc-mast .main-nav {
+  font-weight: 700;
+  font-size: 1.0em;
+  font-family: "Helvetica Neue", "Helvetica", sans-serif;
+
+}
+
+////////////////////////////////////////////////////////////////////////////////
+// CMR FIXES
+////////////////////////////////////////////////////////////////////////////////
+
+.content {
+  padding: 0;
+}
+
+.page-wrapper {
+  position: absolute;
+}
+
+.content pre, .content blockquote {
+  border-left-width: 0;
+}
+
+.toc-footer a {
+  color: #999;
+}
