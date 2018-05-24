@@ -659,19 +659,47 @@ html, body {
 }
 
 ////////////////////////////////////////////////////////////////////////////////
-// CMR FIXES
+// CMR TABLE
 ////////////////////////////////////////////////////////////////////////////////
 
-.content {
-  padding: 0;
+.content table {
+  border: none;
+  width: auto;
 }
+
+////////////////////////////////////////////////////////////////////////////////
+// CMR FIXES
+////////////////////////////////////////////////////////////////////////////////
 
 .page-wrapper {
   position: absolute;
 }
 
+.content {
+  padding: 0;
+}
+
+.content h1:before, .content h2:before {
+  padding-top: 130px;
+}
+
+//.content h1:first-child, .content div:first-child + h1 {
+//  padding-top: 130px;
+//  border-top: 1px solid #ccc;
+//}
+
+.content h1:first-child:before, .content div:first-child:before + h1 {
+  padding-top: 130px;
+}
+
+.content h2 {
+  margin-bottom: 1em;
+}
+
 .content pre, .content blockquote {
   border-left-width: 0;
+  position: relative;
+  top: -130px;
 }
 
 .toc-footer a {

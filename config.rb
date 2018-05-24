@@ -14,10 +14,10 @@ set :markdown,
     renderer: UniqueHeadCounter
 
 # Assets
-set :css_dir, 'stylesheets'
-set :js_dir, 'javascripts'
-set :images_dir, 'images'
-set :fonts_dir, 'fonts'
+set :css_dir, '/rest-api/stylesheets'
+set :js_dir, '/rest-api/javascripts'
+set :images_dir, '/rest-api/images'
+set :fonts_dir, '/rest-api/fonts'
 
 # Activate the syntax highlighter
 activate :syntax
@@ -35,7 +35,7 @@ end
 
 # Github pages require relative links
 activate :relative_assets
-set :relative_links, true
+set :relative_links, false
 
 # Build Configuration
 configure :build do
